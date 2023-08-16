@@ -69,7 +69,7 @@ public class Main implements ActionListener {
          frame.add(No);
          frame.add(textLabel);
          frame.add(iconLabel);
-         frame.setBounds(570,205,400,400);
+         frame.setBounds(590,200,400,400);
          frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
          frame.setVisible(true);
          frame.setLayout(null);
