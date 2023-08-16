@@ -62,11 +62,11 @@ public class Board extends JPanel implements ActionListener {
         setPreferredSize(new Dimension(B_width,B_height)); 
         setBackground(Color.black); // set the background color
 
-        // first call the Load Image method to set the image on Board
-        loadImage();
-
         // then call initaite method for setting the initial position of the snake
         initGame();
+
+        // first call the Load Image method to set the image on Board
+        loadImage();
     }
 
 
@@ -80,8 +80,8 @@ public class Board extends JPanel implements ActionListener {
         y[0]=50;
         
         //Initialize the snake starting position
-        for(int i=0;i<init_dot;i++){
-            x[i]=x[0]-dot_size*i; // Its position is towards left at initial point
+        for(int i=1;i<init_dot;i++){
+            x[i]=x[0]+dot_size*i; // Its position is towards left at initial point
             y[i]=y[0];
         }
 
