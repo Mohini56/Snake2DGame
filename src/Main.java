@@ -16,8 +16,10 @@ public class Main implements ActionListener {
 
      Main() {
 
+         // Adding title to the Main Frame
          frame=new JFrame("Snake Game");
 
+         // Adding Boarder design to the main frame
          frame.getRootPane().setBorder(
                  BorderFactory.createMatteBorder(1, 1, 1, 1, Color.green)
          );
@@ -25,15 +27,18 @@ public class Main implements ActionListener {
          frame.getContentPane().setBackground(Color.BLACK);
          frame.setLayout(null);
 
+         //Adding image to the frame with title
          img= Toolkit.getDefaultToolkit().getImage("C:\\Users\\MOHINI SHARMA\\Downloads\\snakeTitle.jpeg");
          frame.setIconImage(img);
 
 
+         // Using Jlabel adding image in the frame
          iconLabel=new JLabel();
          ImageIcon icon = new ImageIcon("C:\\Users\\MOHINI SHARMA\\Downloads\\snaketit.jpeg");
          Image scaleImage = icon.getImage().getScaledInstance(100, 100,Image.SCALE_SMOOTH);
          iconLabel.setIcon(new ImageIcon(scaleImage));
          iconLabel.setLayout(null);
+         // Setting position of Image using setBounds
          iconLabel.setBounds(134,80,200,100);
          iconLabel.setVisible(true);
 
@@ -46,6 +51,7 @@ public class Main implements ActionListener {
          // to show setBound use setLayout as null
          textLabel.setLayout(null);
 
+         //Adding buttons to the frame
          Yes=new JButton("Yes");
          Yes.setBounds(115,250,60,30);
          Yes.setBackground(Color.green);
@@ -63,7 +69,7 @@ public class Main implements ActionListener {
          frame.add(No);
          frame.add(textLabel);
          frame.add(iconLabel);
-         frame.setBounds(590,200,400,400);
+         frame.setBounds(570,205,400,400);
          frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
          frame.setVisible(true);
          frame.setLayout(null);
